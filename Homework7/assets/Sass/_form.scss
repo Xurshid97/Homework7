@@ -1,0 +1,118 @@
+.form_cont {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 130px;
+
+    .form_cont_left {
+        width: 492px;
+        height: 549px;
+        background-image:  linear-gradient(rgba(47, 47, 47, 0.6), rgba(47, 47, 47, 0.6)), url('../images/image\ \(52\).png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form_cont_right {
+        padding: 100px 70px;
+        background: rgba(47, 47, 47, 0.95);
+        max-width: 654px;
+        height: 549px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 31px;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            margin-bottom: 44px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: 30px;
+
+            input {
+                width: 232px;
+                background-color: inherit;
+                outline: none;
+                border: 1px solid #ffffff81;
+                border-radius: 10px;
+                padding: 18px 30px;
+            }
+            input:hover {
+                border: 1px solid #FFFFFF;
+            }
+            input:nth-of-type(3) {
+                width: 100%;
+            }
+
+        }
+        
+        .bottom {
+            margin-top: 42px;
+            display: flex;
+            align-items: center;
+            color: #ffffffbd;
+            text-transform: capitalize;
+
+            input {
+                margin-right: 9px;
+            }
+
+            button {
+                padding: 15px 30px;
+                margin-left: 50px;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 16px;
+                background: #F59B00;
+                border-radius: 5px;
+                cursor: pointer;
+                border: none;
+        
+                &:hover {
+                    background: #777345;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1240px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        .form_cont_left {
+            width: 100%;
+        }
+
+        .form_cont_right {
+            height: 100%;
+
+            .bottom {
+                flex-wrap: wrap;
+
+                button {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+    justify-content: space-between;
+
+    .comp_img {
+        width: 255px;
+    }
+
+    @media (max-width: 800px) {
+        justify-content: center;
+    }
+}

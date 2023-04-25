@@ -1,0 +1,126 @@
+.bags_cont {
+    display: flex;
+    padding: 130px 0;
+    flex-wrap: wrap;
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 25%;
+        align-items: center;
+
+
+
+        h5 {
+            color: #2F2F2F;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: capitalize;
+            opacity: 0.8;
+        }
+        
+        .line {
+            width: 100%;
+            background-color: #F59B00;
+            opacity: 0.1;
+            height: 2px;
+        }
+
+        .cat_bag {
+            width: 264px;
+            padding: 28px 24px;
+            border: 1px solid #A3A3A3;
+            border-radius: 10px;
+        }
+
+        &:hover {
+            h5 {
+                color: #a35d5d;
+                cursor: pointer;
+            }
+
+            .line {
+                background: #F59B00;
+                border-radius: 2.5px;
+                height: 4px;
+                opacity: 1;
+            }
+
+            .cat_bag {
+                background-color: #F59B00;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 1380px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+
+    @media (max-width: 680px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+}
+
+.creative_cont {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F59B00;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: #2F2F2F;
+        font-weight: 700;
+        font-size: 31px;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+        max-width: 444px;
+    }
+
+    p {
+        color: #2F2F2F;
+        opacity: 0.9;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        max-width: 460px;
+    }
+
+    button {
+        padding: 15px 30px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        background: #F59B00;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        max-width: 141px;
+        margin-top: 20px;
+
+        &:hover {
+            background: #777345;
+            color: #FFFFFF;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
